@@ -25,6 +25,31 @@ Cast.
   <script src="//www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js"></script>
   <!-- Cast Debug Logger -->
   <script src="//www.gstatic.com/cast/sdk/libs/devtools/debug_layer/caf_receiver_logger.js"></script>
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC8nCTfCIhs1u7VmBQWMM9AcPPZ_6aORkI",
+    authDomain: "mxcastanalytics.firebaseapp.com",
+    databaseURL: "https://mxcastanalytics.firebaseio.com",
+    projectId: "mxcastanalytics",
+    storageBucket: "mxcastanalytics.appspot.com",
+    messagingSenderId: "880717800501",
+    appId: "1:880717800501:web:26b63517e460098556bd7c",
+    measurementId: "G-Q956CLG41Y"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+    
 </head>
 
 <body>
